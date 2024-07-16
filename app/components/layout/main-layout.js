@@ -1,11 +1,12 @@
 import React from 'react'
+import { SiteFooter, SiteHeader } from '../common'
 
 const MainLayout = ({children}) => {
   return (
     <>
-    <header>Header</header>
+    <SiteHeader />
     <main>{children}</main>
-    <footer>Footer</footer>
+    <SiteFooter />
     </>
   )
 }

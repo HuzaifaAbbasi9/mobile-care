@@ -5,13 +5,14 @@
 
 :root {
   --dark-100: 0, 0, 0;
-  --light-100: 214, 219, 220;
-  --primary-100: 255, 255, 255;
+  --light-100: 245, 245, 245;
+  --light-200: 153, 153, 153;
+  --primary-100: 106, 78, 245;
   --secondary-100: 255, 255, 255;
   --accent-100: 255, 255, 255;
-  --danger-100: 255, 255, 255;
+  --danger-100: 245, 78, 128;
   --success-100: 255, 255, 255;
-  --warning-100: 255, 255, 255;
+  --warning-100: 208, 255, 22;
   --body-font: "Inter", sans-serif;
   --font-primary: inherit;
   --font-secondary: inherit;

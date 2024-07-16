@@ -2,32 +2,173 @@ import React from "react";
 
 const SvgIcons = ({ type, ...rest }) => {
   switch (type) {
-    case "modalCloseIcon":
+    case "tagIcon":
       return (
         <svg
-          fill-rule="evenodd"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
           {...rest}
-          viewBox="64 64 896 896"
-          focusable="false"
-          data-icon="close"
-          width="1em"
-          height="1em"
-          fill="currentColor"
-          aria-hidden="true"
         >
-          <path d="M799.86 166.31c.02 0 .04.02.08.06l57.69 57.7c.04.03.05.05.06.08a.12.12 0 010 .06c0 .03-.02.05-.06.09L569.93 512l287.7 287.7c.04.04.05.06.06.09a.12.12 0 010 .07c0 .02-.02.04-.06.08l-57.7 57.69c-.03.04-.05.05-.07.06a.12.12 0 01-.07 0c-.03 0-.05-.02-.09-.06L512 569.93l-287.7 287.7c-.04.04-.06.05-.09.06a.12.12 0 01-.07 0c-.02 0-.04-.02-.08-.06l-57.69-57.7c-.04-.03-.05-.05-.06-.07a.12.12 0 010-.07c0-.03.02-.05.06-.09L454.07 512l-287.7-287.7c-.04-.04-.05-.06-.06-.09a.12.12 0 010-.07c0-.02.02-.04.06-.08l57.7-57.69c.03-.04.05-.05.07-.06a.12.12 0 01.07 0c.03 0 .05.02.09.06L512 454.07l287.7-287.7c.04-.04.06-.05.09-.06a.12.12 0 01.07 0z"></path>
+          <mask
+            id="mask0_273_1891"
+            style={{ maskType: "luminance" }}
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+          >
+            <path d="M24 0H0V24H24V0Z" fill="currentColor" />
+          </mask>
+          <g mask="url(#mask0_273_1891)">
+            <path
+              d="M12.75 20.1L3.90002 10.35L4.65002 3.75H11.25L19.95 13.5L12.75 20.1ZM6.00002 9.75L12.9 17.4L17.4 13.5L10.5 5.85H6.45002L6.00002 9.75Z"
+              fill="currentColor"
+            />
+            <path
+              d="M8.24998 8.70003C8.74703 8.70003 9.14997 8.29708 9.14997 7.80002C9.14997 7.30297 8.74703 6.90002 8.24998 6.90002C7.75292 6.90002 7.34998 7.30297 7.34998 7.80002C7.34998 8.29708 7.75292 8.70003 8.24998 8.70003Z"
+              fill="currentColor"
+            />
+          </g>
         </svg>
       );
-    case "check-w":
+    case "achievementIcon":
       return (
         <svg
-          {...rest}
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          fill="#ffffff"
-          viewBox="0 0 448 512"
+          {...rest}
         >
-          {" "}
-          <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+          <mask
+            id="mask0_273_1902"
+            style={{ maskType: "luminance" }}
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+          >
+            <path d="M24 0H0V24H24V0Z" fill="currentColor" />
+          </mask>
+          <g mask="url(#mask0_273_1902)">
+            <path
+              d="M15.2 12L19.2 16H16.1V19.1L12 14.9L7.80005 19V16H4.80005L8.80005 12L4.80005 8.00002H7.90005V4.90002L12 9.10002L16.1 5.00002V8.00002H19.2L15.2 12Z"
+              fill="currentColor"
+            />
+          </g>
+        </svg>
+      );
+    case "settingsIcon":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...rest}
+        >
+          <mask
+            id="mask0_273_1911"
+            style={{ maskType: "luminance" }}
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+          >
+            <path d="M24 0H0V24H24V0Z" fill="currentColor" />
+          </mask>
+          <g mask="url(#mask0_273_1911)">
+            <path
+              d="M20.7001 10.8V8.90002H15.2V11H3.30005V13H15.2V15.1H20.7001V13.2H17.1V10.8H20.7001Z"
+              fill="currentColor"
+            />
+          </g>
+        </svg>
+      );
+    case "navigationBarIcon1":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...rest}
+        >
+          <mask
+            id="mask0_273_1996"
+            style={{ maskType: "luminance" }}
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+          >
+            <path d="M24 0H0V24H24V0Z" fill="currentColor" />
+          </mask>
+          <g mask="url(#mask0_273_1996)">
+            <path
+              d="M12 10.3C9.89995 10.3 8.19995 8.59995 8.19995 6.49995C8.19995 4.39995 9.89995 2.69995 12 2.69995C14.1 2.69995 15.8 4.39995 15.8 6.49995C15.8 8.59995 14.1 10.3 12 10.3ZM12 4.69995C11 4.69995 10.2 5.49995 10.2 6.49995C10.2 7.49995 11 8.29995 12 8.29995C13 8.29995 13.8 7.49995 13.8 6.49995C13.8 5.49995 13 4.69995 12 4.69995Z"
+              fill="currentColor"
+            />
+            <path
+              d="M14.4 10.7V10.8L12 13.2L9.59995 10.8V10.7H4.19995V21.3H6.19995V19.3V12.7H8.79995L12 15.9L14.4 13.5L15.2 12.7H17.8V19.3V21.3H19.8V10.7H14.4Z"
+              fill="currentColor"
+            />
+          </g>
+        </svg>
+      );
+    case "navigationBarIcon2":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...rest}
+        >
+          <mask
+            id="mask0_273_2004"
+            style={{ maskType: "luminance" }}
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+          >
+            <path d="M24 0H0V24H24V0Z" fill="currentColor" />
+          </mask>
+          <g mask="url(#mask0_273_2004)">
+            <path
+              d="M12 20.2001L1.5 9.70005L7.3 3.90005L12 8.50005L16.7 3.80005L22.5 9.60005L12 20.2001ZM4.2 9.70005L12 17.5L19.8 9.70005L16.7 6.60005L12 11.3L7.3 6.60005L4.2 9.70005Z"
+              fill="currentColor"
+            />
+          </g>
+        </svg>
+      );
+    case "navigationBarIcon3":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...rest}
+        >
+          <path
+            d="M16.6008 7.20005C16.5008 4.80005 14.5008 2.80005 12.0008 2.80005C9.50078 2.80005 7.50078 4.80005 7.40078 7.20005H4.30078V21.2001H19.7008V7.20005H16.6008ZM12.0008 4.70005C13.4008 4.70005 14.6008 5.80005 14.7008 7.20005H9.30078C9.40078 5.80005 10.6008 4.70005 12.0008 4.70005ZM17.8008 19.3H6.20078V9.10005H17.7008V19.3H17.8008Z"
+            fill="currentColor"
+          />
         </svg>
       );
     default:
