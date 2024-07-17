@@ -1,11 +1,15 @@
+"use client"
 import { HeaderData } from "@/app/data/data";
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "./NavLink";
 import { Img, SvgIcons } from "@/app/components";
 import { Input } from "antd";
+import { HeaderDrawer } from "./HeaderDrawer";
 
 const MainNavigation = () => {
+  const [drawerVisible, setDrawerVisible] = useState(false);
   return (
+    <>
     <nav className="py-5 bg-dark-100">
       <div className="container">
         <div className="flex gap-5 justify-between">
@@ -39,7 +43,7 @@ const MainNavigation = () => {
         </div>
         <div className="flex items-center justify-between gap-5 pt-24px">
           <div className="flex items-center justify-between gap-12">
-            <button className="!h-45px !px-19px !py-8px !bg-accent-100 !flex !items-center !gap-3 !text-dark-100 !rounded-none">
+            <button onClick={()=>setDrawerVisible(true)} className="!h-45px !px-19px !py-8px !bg-accent-100 !flex !items-center !gap-3 !text-dark-100 !rounded-none">
               <span className="text-base font-bold tracking-tight">
                 Všetky kategórie
               </span>
@@ -63,6 +67,8 @@ const MainNavigation = () => {
         </div>
       </div>
     </nav>
+    <HeaderDrawer drawerVisible={drawerVisible} setDrawerVisible={setDrawerVisible} />
+    </>
   );
 };
 
