@@ -171,6 +171,83 @@ const SvgIcons = ({ type, ...rest }) => {
           />
         </svg>
       );
+    case "bars":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...rest}
+        >
+          <mask
+            id="mask0_297_1961"
+            style={{ maskType: "luminance" }}
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+          >
+            <path d="M24 0H0V24H24V0Z" fill="white" />
+          </mask>
+          <g mask="url(#mask0_297_1961)">
+            <path
+              d="M19.7001 11H4.20007V12.9H19.7001V11Z"
+              fill="currentColor"
+            />
+            <path
+              d="M19.7001 16.3H7.80007V18.2H19.7001V16.3Z"
+              fill="currentColor"
+            />
+            <path
+              d="M19.7001 5.80005H6.60007V7.70005H19.7001V5.80005Z"
+              fill="currentColor"
+            />
+          </g>
+        </svg>
+      );
+    case "search":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...rest}
+        >
+          <g clip-path="url(#clip0_297_2014)">
+            <mask
+              id="mask0_297_2014"
+              style={{ maskType: "luminance" }}
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="24"
+              height="24"
+            >
+              <path d="M24 0H0V24H24V0Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_297_2014)">
+              <path
+                d="M10.2 16.6C6.70005 16.6 3.80005 13.7 3.80005 10.2C3.80005 6.70005 6.70005 3.80005 10.2 3.80005C13.7 3.80005 16.6 6.70005 16.6 10.2C16.6 13.7 13.7 16.6 10.2 16.6ZM10.2 5.70005C7.70005 5.70005 5.70005 7.70005 5.70005 10.2C5.70005 12.7 7.70005 14.7 10.2 14.7C12.7 14.7 14.7 12.7 14.7 10.2C14.7 7.70005 12.7 5.70005 10.2 5.70005Z"
+                fill="currentColor"
+              />
+              <path
+                d="M16.3257 15.0614L14.9822 16.4049L18.8712 20.294L20.2147 18.9505L16.3257 15.0614Z"
+                fill="currentColor"
+              />
+            </g>
+          </g>
+          <defs>
+            <clipPath id="clip0_297_2014">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      );
     default:
       return <></>;
   }

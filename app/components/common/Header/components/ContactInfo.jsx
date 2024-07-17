@@ -1,4 +1,4 @@
-import { HeaderData } from '@/app/components/data/data'
+import { HeaderData } from '@/app/data/data'
 import React from 'react'
 
 const ContactInfo = () => {

@@ -20,7 +20,18 @@ const HeaderData = {
         { icon: "settingsIcon", title: "MC Servis" },
       ],
       logos: ["./images/logo.svg", "./images/premium-logo.svg"],
-      icons: ["navigationBarIcon1", "navigationBarIcon2", 'navigationBarIcon3'],
+      icons: ["navigationBarIcon1", "navigationBarIcon2", "navigationBarIcon3"],
+    },
+    mainNavigation: {
+      links: [
+        { link: "#", title: "iPhone" },
+        { link: "#", title: "iPad" },
+        { link: "#", title: "MacBook" },
+        { link: "#", title: "Apple Airpods" },
+        { link: "#", title: "Smarthome" },
+        { link: "#", title: "Príslušenstvo" },
+      ],
+      searchBar: {placeholder:'Zadajte názov produktu', icon:'search'}
     },
   },
 };
