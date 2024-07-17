@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiteFooter, SiteHeader } from '../common'
+import { SiteFooter, SiteHeader } from '../components'
 
 const MainLayout = ({children}) => {
   return (
@@ -11,4 +11,4 @@ const MainLayout = ({children}) => {
   )
 }
 
-export { MainLayout }
+export { MainLayout } 
