@@ -7,22 +7,34 @@ import { HeaderData } from "@/app/data/data";
 
 const HeaderDrawer = ({ drawerVisible, setDrawerVisible }) => {
   const [openMenus, setOpenMenus] = useState(["menu1"]);
-  const [activeMenuLink, setActiveMenuLink] = useState();
+  const [activeMenuLinks, setActiveMenuLinks] = useState({
+    tab1: null,
+    tab2: null,
+    tab3: null,
+  });
   const onClose = () => {
     setDrawerVisible(false);
     setOpenMenus(["menu1"]);
-    setActiveMenuLink();
-  };
-  const handleMenuClick = (menuLevel, index, i) => {
-    if (menuLevel=="menu2") {
-        setActiveMenuLink(`${i}${index}`);   
-    }
-    setOpenMenus((prevOpenMenus) => {
-      if (!prevOpenMenus.includes(menuLevel)) {
-        return [...prevOpenMenus, menuLevel];
-      }
-      return prevOpenMenus;
+    setActiveMenuLinks({
+      tab1: null,
+      tab2: null,
+      tab3: null,
     });
+  };
+  const handleMenuClick = (tab, index) => {
+    setActiveMenuLinks((prevActiveMenuLinks) => ({
+      ...prevActiveMenuLinks,
+      [tab]: index,
+    }));
+    if(openMenus.length <= 2) {
+        const nextMenuLevel = `menu${parseInt(tab.replace("tab", "")) + 1}`;
+        setOpenMenus((prevOpenMenus) => {
+          if (!prevOpenMenus.includes(nextMenuLevel)) {
+            return [...prevOpenMenus, nextMenuLevel];
+          }
+          return prevOpenMenus;
+        });
+    }
   };
   const renderMenu = (menuLevel) => {
     if (openMenus.includes(menuLevel)) {
@@ -46,14 +58,16 @@ const HeaderDrawer = ({ drawerVisible, setDrawerVisible }) => {
                       {menu?.map((link, index) => (
                         <li
                           key={index}
-                          onClick={() => handleMenuClick("menu2", index, i)}
+                          onClick={() =>
+                            handleMenuClick("tab1", `${i}${index}`)
+                          }
                         >
                           <button className="flex items-center gap-2 w-full min-h-36px text-secondary-100">
                             {link.icon && <SvgIcons type={link.icon} />}
                             <span
                               className={`${
-                                activeMenuLink === `${i}${index}`
-                                  ? "font-bold"
+                                activeMenuLinks.tab1 === `${i}${index}`
+                                  ? "font-bold text-accent-100"
                                   : "font-semibold"
                               } text-base`}
                             >
@@ -75,7 +89,7 @@ const HeaderDrawer = ({ drawerVisible, setDrawerVisible }) => {
                             {!link.hideArrow && (
                               <span
                                 className={`wh-36px grid place-items-center ml-auto ${
-                                  activeMenuLink === `${i}${index}`
+                                  activeMenuLinks.tab1 === `${i}${index}`
                                     ? "bg-accent-100 text-primary-100"
                                     : ""
                                 }`}
@@ -117,16 +131,19 @@ const HeaderDrawer = ({ drawerVisible, setDrawerVisible }) => {
               <div className="mt-5 space-y-5 flex-1 pb-6">
                 <ul className="space-y-3">
                   {HeaderData?.drawer?.tab2?.links?.map((link, index) => (
-                    <li key={index} onClick={() => handleMenuClick("menu3")}>
+                    <li
+                      key={index}
+                      onClick={() => handleMenuClick("tab2", index)}
+                    >
                       <button className="flex items-center gap-2 w-full min-h-36px text-dark-100">
                         {link.img && <Img src={link.img} />}
-                        <span className={`font-semibold text-base`}>
+                        <span className={`${activeMenuLinks.tab2 === index ? 'font-bold' : 'font-semibold'} text-base`}>
                           {link.title}
                         </span>
                         <span
                           className={`wh-36px grid place-items-center ml-auto ${
-                            activeMenuLink === `${index}`
-                              ? "bg-accent-100 text-primary-100"
+                            activeMenuLinks.tab2 === index
+                              ? "bg-dark-100 text-accent-100"
                               : ""
                           }`}
                         >
@@ -154,18 +171,18 @@ const HeaderDrawer = ({ drawerVisible, setDrawerVisible }) => {
               <div className="mt-5 space-y-5 flex-1 pb-6">
                 <ul className="space-y-3">
                   {HeaderData?.drawer?.tab3?.links?.map((link, index) => (
-                    <li key={index}>
+                    <li key={index} onClick={() => handleMenuClick("tab3", index)}>
                       <button className="flex items-center gap-2 w-full min-h-36px text-dark-100">
-                        <span className={`font-semibold text-base`}>
+                        <span
+                          className={`${
+                            activeMenuLinks.tab3 === index ? "font-bold" : "font-regular"
+                          } text-base`}
+                        >
                           {link.title}
                         </span>
                         {link.showArrow && (
                           <span
-                            className={`wh-36px grid place-items-center ml-auto ${
-                              activeMenuLink === `${index}`
-                                ? "bg-accent-100 text-primary-100"
-                                : ""
-                            }`}
+                            className={`wh-36px grid place-items-center ml-auto`}
                           >
                             <SvgIcons type="arrow-right" className="!wh-17px" />
                           </span>
