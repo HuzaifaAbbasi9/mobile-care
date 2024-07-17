@@ -40,3 +40,19 @@
 :hover::-webkit-scrollbar-thumb:hover {
   background-color: #aaa;
 }
+
+.cusotm-selectbox .ant-select-selector {
+  border-radius: 0px !important;
+}
+.cusotm-selectbox .ant-select-selection-item {
+  font-weight: bold !important;
+}
+
+@layer base {
+  .custom-checkbox .ant-checkbox-inner {
+    @apply !wh-22px !border-2 !border-dark-100 !rounded-none;
+  }
+  .custom-checkbox .ant-checkbox.ant-wave-target {
+    @apply !mr-2;
+  }
+}

@@ -3,7 +3,7 @@ import React from 'react'
 
 const ContactInfo = () => {
   return (
-    <div className='relative bg-dark-100 py-3px mt-5'>
+    <div className='relative bg-dark-100 py-3px'>
       <div className='md:max-w-95/100 md:mx-auto md:px-5 max-md:px-4'>
         <div className='flex items-center gap-5'>
           {HeaderData?.contactInfo?.map((info, i)=>(
