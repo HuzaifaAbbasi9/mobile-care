@@ -107,7 +107,7 @@ const HeroHeader = () => {
                 otherClass="!ml-auto"
               />
             </div>
-            <div className="py-5 px-5 space-y-5">
+            <div className="py-5 px-5 space-y-17px">
               <div className="flex items-center justify-between gap-4">
                 <P
                   textSizeClass="text-14px"
@@ -178,6 +178,10 @@ const HeroHeader = () => {
                     otherClass="leading-none"
                   />
                 </Checkbox>
+              </div>
+              <div className="flex items-stretch gap-4 !pt-5">
+                <button className="h-45px border-3 border-dark-100 font-bold text-base px-4 text-center flex-1">Pokračovať v nákupe</button>
+                <button className="h-45px border-3 border-dark-100 bg-dark-100 text-accent-100 font-bold text-base px-4 text-center flex-1">Pokračovať v nákupe</button>
               </div>
             </div>
           </div>

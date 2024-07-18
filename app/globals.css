@@ -55,4 +55,17 @@
   .custom-checkbox .ant-checkbox.ant-wave-target {
     @apply !mr-2;
   }
+  .custom-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .custom-prev,
+  .custom-next {
+    background-color: #0070f3;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
 }

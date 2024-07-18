@@ -164,7 +164,16 @@ const HeroHeaderData = {
     { img: "./images/product-img-2.svg", title: "iPhone 14 PRO", description: "Kapacita: 256 GB, Farba: Silver", price: '1299 €'},
     { img: "./images/product-img-3.svg", title: "Apple AirPods 2 GEN", description: "Kapacita: 256 GB, Farba: Silver", price: '1299 €' },
   ],
-  Images: ["Pomoc & kontakt", "Rastislavova 68, Košice", "+421 919 215 491"],
+  slider: [
+    {image: './images/slider-product-1.svg', tag:'Novinka'},
+    {image: './images/slider-product-2.svg', tag:'Novinka'},
+    {image: './images/slider-product-3.svg'},
+    {image: './images/slider-product-1.svg'},
+    {image: './images/slider-product-1.svg', tag:'Novinka'},
+    {image: './images/slider-product-2.svg', tag:'Novinka'},
+    {image: './images/slider-product-3.svg'},
+    {image: './images/slider-product-1.svg'},
+  ]
 };
 
 export { HeaderData, HeroHeaderData };

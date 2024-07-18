@@ -481,6 +481,54 @@ const SvgIcons = ({ type, ...rest }) => {
           </g>
         </svg>
       );
+    case "shape":
+      return (
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.8 32L12.7 19.6L0.0999756 15.8L12.7 12.4L16.2 0L19.3 12.4L31.9 15.8L19.3 19.6L15.8 32ZM12 16L15.3 17L15.9 19.4L16.6 17L19.9 16L16.6 15.1L16 12.6L15.3 15.1L12 16Z"
+            fill="#030303"
+          />
+          <path
+            d="M5.85187 3.5758L3.64417 6.02869L6.91469 8.97229L9.12239 6.5194L5.85187 3.5758Z"
+            fill="#030303"
+          />
+        </svg>
+      );
+    case "sliderIcon":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...rest}
+        >
+          <mask
+            id="mask0_379_1255"
+            style={{ maskType: "luminance" }}
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+          >
+            <path d="M24 0H0V24H24V0Z" fill="white" />
+          </mask>
+          <g mask="url(#mask0_379_1255)">
+            <path
+              d="M16.6501 7.8L15.1501 9.15L17.1 11.1H3.30005V13.05H17.1L15.1501 15L16.6501 16.2L20.7001 12L16.6501 7.8Z"
+              fill="black"
+            />
+          </g>
+        </svg>
+      );
     default:
       return <></>;
   }
