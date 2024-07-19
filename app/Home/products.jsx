@@ -70,7 +70,7 @@ const Products = () => {
             </div>
           ))}
         </Carousel>
-        <div className="flex items-center justify-end gap-4">
+        <div className="flex items-center justify-end gap-4 mt-5">
           <button
             className="wh-44px border-3 border-dark-100 grid place-items-center"
             onClick={handlePrevClick}
