@@ -160,20 +160,96 @@ const HeaderData = {
 
 const HeroHeaderData = {
   cart: [
-    { img: "./images/product-img-1.svg", title: "iPhone 14", description: "Kapacita: 256 GB, Farba: Silver", price: '1299 €', oldPrice: '1799 €', discount: 'Uštríte 17% oproti pôvodnej sume' },
-    { img: "./images/product-img-2.svg", title: "iPhone 14 PRO", description: "Kapacita: 256 GB, Farba: Silver", price: '1299 €'},
-    { img: "./images/product-img-3.svg", title: "Apple AirPods 2 GEN", description: "Kapacita: 256 GB, Farba: Silver", price: '1299 €' },
+    {
+      img: "./images/product-img-1.svg",
+      title: "iPhone 14",
+      description: "Kapacita: 256 GB, Farba: Silver",
+      price: "1299 €",
+      oldPrice: "1799 €",
+      discount: "Uštríte 17% oproti pôvodnej sume",
+    },
+    {
+      img: "./images/product-img-2.svg",
+      title: "iPhone 14 PRO",
+      description: "Kapacita: 256 GB, Farba: Silver",
+      price: "1299 €",
+    },
+    {
+      img: "./images/product-img-3.svg",
+      title: "Apple AirPods 2 GEN",
+      description: "Kapacita: 256 GB, Farba: Silver",
+      price: "1299 €",
+    },
   ],
   slider: [
-    {image: './images/slider-product-1.svg', tag:'Novinka'},
-    {image: './images/slider-product-2.svg', tag:'Novinka'},
-    {image: './images/slider-product-3.svg'},
-    {image: './images/slider-product-1.svg'},
-    {image: './images/slider-product-1.svg', tag:'Novinka'},
-    {image: './images/slider-product-2.svg', tag:'Novinka'},
-    {image: './images/slider-product-3.svg'},
-    {image: './images/slider-product-1.svg'},
-  ]
+    { image: "./images/slider-product-1.svg", tag: "Novinka" },
+    { image: "./images/slider-product-2.svg", tag: "Novinka" },
+    { image: "./images/slider-product-3.svg" },
+    { image: "./images/slider-product-1.svg" },
+    { image: "./images/slider-product-1.svg", tag: "Novinka" },
+    { image: "./images/slider-product-2.svg", tag: "Novinka" },
+    { image: "./images/slider-product-3.svg" },
+    { image: "./images/slider-product-1.svg" },
+  ],
 };
 
-export { HeaderData, HeroHeaderData };
+const FooterData = {
+  leftBar: {
+    data: {
+      heading: "Kontaktné údaje",
+      links: [
+        { link: "#", title: "+421 919 215  491" },
+        { link: "#", title: "Rastislavova 68, Košice" },
+      ],
+    },
+    icons: [
+      "social-icon-1",
+      "social-icon-2",
+      "social-icon-3",
+      "social-icon-4",
+      "social-icon-5",
+    ],
+  },
+  rightBar: {
+    data: [
+      {
+        heading: "Customer service",
+        links: [
+          { link: "#", title: "Kontaktujte nás" },
+          { link: "#", title: "FAQs" },
+          { link: "#", title: "Vrátenie zásielky" },
+          { link: "#", title: "Doručenie" },
+          { link: "#", title: "Sledovanie zásielky" },
+          { link: "#", title: "Platby a cenotvorba" },
+        ],
+      },
+      {
+        heading: "Iné",
+        links: [
+          { link: "#", title: "Iné iné a niečo iné" },
+          { link: "#", title: "Iné iné iné" },
+          { link: "#", title: "Iné iné a iné" },
+        ],
+      },
+      {
+        heading: "Mobilecare",
+        links: [
+          { link: "#", title: "O nás" },
+          { link: "#", title: "Blog" },
+          { link: "#", title: "Kariéra" },
+        ],
+      },
+      {
+        heading: "Členstvo, zľavy a akcie",
+        links: [
+          { link: "#", title: "Odporuč nás a dostaň zľavu 10%" },
+          { link: "#", title: "Vernostný program" },
+        ],
+      },
+    ],
+    tags: ['Slovensko','Česká republika','România', 'Polska'],
+    footerLinks: ['Podmienky používania', 'GDPR', 'Ochrana osobných údajov']
+  },
+};
+
+export { HeaderData, HeroHeaderData, FooterData };

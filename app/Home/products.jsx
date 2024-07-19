@@ -34,11 +34,11 @@ const Products = () => {
             <div className="flex flex-col relative" key={index}>
               <div className="relative flex-1">
                 {slide.tag && (
-                  <span class="absolute top-3 left-0 py-5px px-7px text-xs font-semibold text-dark-100 !leading-none bg-warning-100">
+                  <span className="absolute top-3 left-0 py-5px px-7px text-xs font-semibold text-dark-100 !leading-none bg-warning-100">
                     {slide.tag}
                   </span>
                 )}
-                <span class="absolute top-0 right-0">
+                <span className="absolute top-0 right-0">
                   <SvgIcons type="navigationBarIcon2" />
                 </span>
                 <Img src={slide.image} />
